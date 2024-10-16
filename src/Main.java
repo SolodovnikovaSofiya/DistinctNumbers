@@ -6,8 +6,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         ArrayList numbers = new ArrayList<>();
 
-        System.out.println("Введите числа (0 для завершения):");
-
+        System.out.println("Введите числа:");
         while (true) {
             int num = scanner.nextInt();
             if (num == 0) {
@@ -17,12 +16,11 @@ public class Main {
                 numbers.add(num);
             }
         }
-
-        System.out.println("Несовпадающие числа в последовательности:");
+        System.out.println("Несовпадающие числа:");
         for (Object number : numbers) {
             System.out.println(number);
         }
-
+        //закрываем scanner
         scanner.close();
     }
 }
